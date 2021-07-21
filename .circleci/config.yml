@@ -1,0 +1,81 @@
+version: 2.1
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: cimg/node:16.4.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Test Next Build
+          command: yarn build
+      - run:
+          name: Test Storybook Build
+          command: yarn build:storybook
+
+  code_quality_and_integrity:
+    working_directory: ~/repo
+    docker:
+      - image: cimg/node:16.4.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Type Check
+          command: yarn type-check
+      - run:
+          name: Verify Code Style
+          command: yarn prettier:check
+      - run:
+          name: Verify Code Quality and Integrity
+          command: yarn eslint:check
+      - run:
+          name: Verify Stylesheets Quality and Integrity
+          command: yarn stylelint:check
+
+  test:
+    working_directory: ~/repo
+    docker:
+      - image: cimg/node:16.4.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run tests
+          command: yarn test
+
+workflows:
+  build:
+    jobs:
+      - build
+  code_quality_and_integrity:
+    jobs:
+      - code_quality_and_integrity
+  test:
+    jobs:
+      - test

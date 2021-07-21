@@ -1,0 +1,11 @@
+build
+node_modules
+*.config.js
+.eslintrc.js
+.next
+.husky
+.vscode
+src/**/*.test*
+coverage
+.storybook
+.circleci

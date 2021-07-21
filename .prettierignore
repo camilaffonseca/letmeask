@@ -1,0 +1,8 @@
+build
+node_modules
+.next
+.husky
+.vscode
+coverage
+.storybook
+.circleci

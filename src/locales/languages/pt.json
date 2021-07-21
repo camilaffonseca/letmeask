@@ -1,0 +1,5 @@
+{
+  "home.hello": "Olá!",
+  "home.description": "Esta é a versão de produção do boilerplate frontend da Nexpy. Este boilerplate é baseado em Typescript e Next.js e é de código aberto.",
+  "home.use": "Você pode usá-lo em seus projetos e modelos, ou contribuir com melhorias e novos recursos!"
+}
