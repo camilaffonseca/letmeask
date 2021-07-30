@@ -1,28 +1,23 @@
 <p align="center">
-  <a href="https://front-boilerplate.nexpy.com.br/">
-    <img src="https://user-images.githubusercontent.com/41436010/125207308-fbd9eb80-e261-11eb-98e4-7ae01ad1f143.png" width="600">
+  <a href="https://letmeask-camila.vercel.app/">
+    <img width="1920" alt="letmeask" src="https://user-images.githubusercontent.com/54648900/126545674-b3b0d5cc-51cb-4c8e-b970-4542f2547a24.png">
   </a>
 </p>
 
-# nexpy-frontend-boilerplate
+# Letmeask
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8858be17-4783-478e-b134-d8eb820b6d75/deploy-status)](https://app.netlify.com/sites/nexpy-frontend-boilerplate-storybook/deploys)
-![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=nexpy-frontend-boilerplate)
-[![License](https://img.shields.io/github/license/AllanOliveiraM/nexpy-frontend-boilerplate?style=flat)](https://github.com/nexpy-io/frontend-boilerplate/blob/main/LICENSE)
-[![All Contributors](https://img.shields.io/github/all-contributors/AllanOliveiraM/nexpy-frontend-boilerplate/main)](#contributors-)
-[![Nexpy](https://circleci.com/gh/AllanOliveiraM/nexpy-frontend-boilerplate.svg?style=svg)](https://app.circleci.com/pipelines/github/AllanOliveiraM/nexpy-frontend-boilerplate)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/68ac242b-2eaa-4ad0-8657-075ea81f95e9/deploy-status)](https://app.netlify.com/sites/letmeask-storybook/deploys)
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=letmeask)
+[![License](https://img.shields.io/github/license/camilaffonseca/letmeask?style=flat)](https://github.com/camilaffonseca/letmeask/blob/main/LICENSE)
+[![Letmeask](https://circleci.com/gh/camilaffonseca/letmeask.svg?style=svg)](https://app.circleci.com/pipelines/github/camilaffonseca/letmeask)
 
 <br />
 
-[nexpy-frontend-boilerplate](https://github.com/AllanOliveiraM/nexpy-frontend-boilerplate) is an Nexpy.io open source template repository for front end development based on [Next.js](https://github.com/vercel/next.js) and [TypeScript](https://github.com/microsoft/TypeScript).
+Basically, Letmeask's idea is to make a question management focused on the need of content producers to have a better way to visualize their audience's questions and prioritize the most requested answers. The user has the possibility to create their own rooms and make it available to people or join existing rooms, ask their questions and vote on questions asked by other people. :)
 
-<br /><br />
+<br />
 
-## More Docs
-
-**Documentation is under construction and may not be fully available.**
-
-A components documentation is available [here](https://nexpy-frontend-boilerplate-storybook.nexpy.com.br/).
+Developed based on the project proposed by Rocketseat at NLW/Together using more advanced technologies and Server Side Rendering
 
 <br /><br />
 
@@ -115,60 +110,6 @@ that we can make the commits in a standardized way.
 
 <br /><br />
 
-### Create production build
-
-```sh
-yarn build
-```
-
-Creates an optimized production build of the application. The output displays information about each route.
-
-<br /><br />
-
-### Starts the application in production mode
-
-```sh
-yarn start
-```
-
-The application should be compiled with next build first.
-
-The application will start at `http://localhost:3000` by default. The default port can be changed with `-p`, like so:
-
-```sh
-npx next start -p 4000
-```
-
-Or using the PORT environment variable:
-
-```sh
-PORT=4000 npx next start
-```
-
-Note: PORT can not be set in .env as booting up the HTTP server happens before any other code is initialized.
-
-<br /><br />
-
-### Check typing
-
-```sh
-yarn type-check
-```
-
-Run a test using the TypeScript compiler to identify code typing failures.
-
-<br /><br />
-
-### Start debug server
-
-```sh
-yarn debug
-```
-
-Starts the development server with debug options. V8 inspector integration allows tools such as Chrome DevTools and IDEs to debug and profile Node.js instances.
-
-<br /><br />
-
 ### Automatically format code
 
 ```sh
@@ -209,6 +150,16 @@ Looks for code integrity errors in all files without changing them, reporting po
 
 <br /><br />
 
+### Check typing
+
+```sh
+yarn type-check
+```
+
+Run a test using the TypeScript compiler to identify code typing failures.
+
+<br /><br />
+
 ### Check stylesheet patterns
 
 ```sh
@@ -229,6 +180,40 @@ Run the automated tests using [jest](https://jestjs.io/).
 
 <br /><br />
 
+### Create production build
+
+```sh
+yarn build
+```
+
+Creates an optimized production build of the application. The output displays information about each route.
+
+<br /><br />
+
+### Starts the application in production mode
+
+```sh
+yarn start
+```
+
+The application should be compiled with next build first.
+
+The application will start at `http://localhost:3000` by default. The default port can be changed with `-p`, like so:
+
+```sh
+npx next start -p 4000
+```
+
+Or using the PORT environment variable:
+
+```sh
+PORT=4000 npx next start
+```
+
+Note: PORT can not be set in .env as booting up the HTTP server happens before any other code is initialized.
+
+<br /><br />
+
 ### Run development storybook server
 
 ```sh
@@ -239,13 +224,31 @@ A server with a fast refresh for components documentation development. Do not us
 
 <br /><br />
 
-### Buid storybook
+### Build storybook
 
 ```sh
 yarn build:storybook
 ```
 
 Created a production build for storybook.
+
+<br /><br />
+
+### Start debug server
+
+```sh
+yarn debug
+```
+
+Starts the development server with debug options. V8 inspector integration allows tools such as Chrome DevTools and IDEs to debug and profile Node.js instances.
+
+<br /><br />
+
+## More Docs
+
+**Documentation is under construction and may not be fully available.**
+
+A components documentation is available [here](https://letmeask-storybook.netlify.app/).
 
 <br /><br />
 
@@ -259,27 +262,6 @@ See what we are preparing for the future:
 - Custom hooks.
 
 <br /><br />
-
-## Contributors ✨
-
-Thanks goes to these wonderful people:
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/camilaffonseca"><img src="https://avatars.githubusercontent.com/u/54648900?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Camila Fonseca</b></sub></a><br /><a href="https://github.com/AllanOliveiraM/nexpy-frontend-boilerplate/commits?author=camilaffonseca" title="Code">💻</a> <a href="#ideas-camilaffonseca" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/AllanOliveiraM"><img src="https://avatars.githubusercontent.com/u/41436010?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Allan Oliveira Miraballes</b></sub></a><br /><a href="https://github.com/AllanOliveiraM/nexpy-frontend-boilerplate/commits?author=AllanOliveiraM" title="Code">💻</a> <a href="https://github.com/AllanOliveiraM/nexpy-frontend-boilerplate/commits?author=AllanOliveiraM" title="Documentation">📖</a> <a href="#ideas-AllanOliveiraM" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-AllanOliveiraM" title="Maintenance">🚧</a> <a href="#projectManagement-AllanOliveiraM" title="Project Management">📆</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-<br />
 
 ## License
 

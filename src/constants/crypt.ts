@@ -1,1 +1,1 @@
-export const OBFUSCATED_TOKEN_PREFIX = 'Nexpy-'
+export const OBFUSCATED_TOKEN_PREFIX = 'Letmeask-'

@@ -16,7 +16,7 @@ const Head = ({ title, faviconPath }: HeadProps) => {
 }
 
 Head.defaultProps = {
-  title: 'Nexpy',
+  title: 'Letmeask',
   faviconPath: '/favicon.ico',
 }
 

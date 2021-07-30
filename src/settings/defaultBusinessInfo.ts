@@ -5,10 +5,10 @@ const defaultBusinessInfo: BusinessInfo = {
     useDefaultLoader: true,
   },
   businessData: {
-    businessName: 'Nexpy',
+    businessName: 'Letmeask',
   },
   imagePaths: {
-    businessLogo: '/img/temp.png',
+    businessLogo: '/images/logos/logo.svg',
   },
 }
 

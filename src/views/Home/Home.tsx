@@ -44,7 +44,7 @@ const Home = () => {
           <footer>
             <p>{t('home.use')}</p>
             <div>
-              <Link href='https://github.com/AllanOliveiraM/nexpy-frontend-boilerplate'>
+              <Link href='https://github.com/camilaffonseca'>
                 <a target='_blank' rel='noreferrer'>
                   <Image
                     width={24}
@@ -54,13 +54,13 @@ const Home = () => {
                   />
                 </a>
               </Link>
-              <Link href='https://github.com/nexpy-io'>
+              <Link href='https://github.com/camilaffonseca/letmeask'>
                 <a target='_blank' rel='noreferrer'>
                   <Image
                     width={31}
                     height={24}
-                    src='/images/logos/nexpy-logo-square.png'
-                    alt='Nexpy Logo'
+                    src='/images/logos/logo.svg'
+                    alt='Letmeask Logo'
                   />
                 </a>
               </Link>

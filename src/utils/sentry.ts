@@ -45,7 +45,7 @@ export const captureException = async (error: Error | Exception) => {
 
       if (!success) {
         throw new Error(
-          `Flush pass: false. It may not have been possible to send exception data to Nexpy servers. Please report this bug! ${String(
+          `Flush pass: false. It may not have been possible to send exception data to Letmeask servers. Please report this bug! ${String(
             error
           )}`
         )
@@ -59,7 +59,7 @@ export const captureException = async (error: Error | Exception) => {
       )
     } catch {
       console.error(
-        '[MONITORING] It was not possible to send exception data for Nexpy servers. Please report this bug! ',
+        '[MONITORING] It was not possible to send exception data for Letmeask servers. Please report this bug! ',
         error
       )
     }
