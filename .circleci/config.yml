@@ -76,6 +76,6 @@ workflows:
   code_quality_and_integrity:
     jobs:
       - code_quality_and_integrity
-  test:
-    jobs:
-      - test
+  # test:
+  #   jobs:
+  #     - test
