@@ -6,6 +6,13 @@ import {
 
 export const { NEXT_PUBLIC_API_URL } = process.env
 export const { NEXT_PUBLIC_SENTRY_DSN } = process.env
+export const { NEXT_PUBLIC_API_KEY } = process.env
+export const { NEXT_PUBLIC_AUTH_DOMAIN } = process.env
+export const { NEXT_PUBLIC_DATABASE_URL } = process.env
+export const { NEXT_PUBLIC_PROJECT_ID } = process.env
+export const { NEXT_PUBLIC_STORAGE_BUCKET } = process.env
+export const { NEXT_PUBLIC_MESSAGING_SENDER_ID } = process.env
+export const { NEXT_PUBLIC_APP_ID } = process.env
 
 export const getNodeEnv = () => ({
   NODE_ENV: process.env.NODE_ENV,

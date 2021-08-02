@@ -4,6 +4,8 @@ import { Head } from 'components/common'
 
 import { initSentry } from 'utils/sentry'
 
+import 'services/firebase'
+
 import 'theme/preflight.css'
 
 initSentry()
