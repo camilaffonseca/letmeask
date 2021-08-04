@@ -1,5 +1,11 @@
 {
-  "home.hello": "Hello there! :)",
-  "home.description": "This is the production version of Letmeask. This project is based on Typescript and Next.js and it's open source.",
-  "home.use": "You can use it or contribute with improvements and new features!"
+  "sign_in.alt_illustration_image": "Illustrative image representing questions and answers",
+  "sign_in.title": "Every question has an answer.",
+  "sign_in.description": "Learn and share knowledge with others",
+  "sign_in.alt_world_icon": "Button with world icon that when clicked switches to portuguese language",
+  "sign_in.alt_logo": "Letmeask logo",
+  "sign_in.create_room": "Create your room with Google",
+  "sign_in.enter_a_room": "or enter a room",
+  "sign_in.enter_room_code": "Enter room code",
+  "sign_in.enter_a_room_button": "Enter the room"
 }

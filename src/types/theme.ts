@@ -3,8 +3,23 @@ export type Theme = {
     black: string
     white: string
 
-    primary: string
-    secondary: string
-    tertiary: string
+    grayDark: string
+    grayMedium: string
+    grayLight: string
+
+    purple: string
+    pinkDark: string
+    pinkLight: string
+
+    shadow: string
+    danger: string
+    background: string
+
+    hover: {
+      purple: string
+      danger: string
+      grayMedium: string
+      grayLight: string
+    }
   }
 }

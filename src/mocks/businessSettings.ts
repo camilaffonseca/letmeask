@@ -3,12 +3,27 @@ import { BusinessSettings } from 'types/businessSettings'
 const businessSettings: BusinessSettings = {
   theme: {
     colors: {
-      black: '#28262C',
-      white: '#F9F5FF',
+      black: '#29292E',
+      white: '#FEFEFE',
 
-      primary: '#7B1477',
-      secondary: '#9A0C9D',
-      tertiary: '##d6bf3a',
+      grayDark: '#737380',
+      grayMedium: '#A8A8B3',
+      grayLight: '#DBDCDD',
+
+      purple: '#835AFD',
+      pinkDark: '#E559F9',
+      pinkLight: '#D67EE2',
+
+      shadow: '#050206',
+      danger: '#E73F5D',
+      background: '#F8F8F8',
+
+      hover: {
+        purple: '#6F4BD8',
+        danger: '#D73754',
+        grayMedium: '#7E7E86',
+        grayLight: '#CECECE',
+      },
     },
   },
   businessInfo: {
@@ -16,10 +31,10 @@ const businessSettings: BusinessSettings = {
       useDefaultLoader: false,
     },
     businessData: {
-      businessName: 'Jaqueline Furtado',
+      businessName: 'Letmeask',
     },
     imagePaths: {
-      businessLogo: '/img/temp.png',
+      businessLogo: '/images/logos/letmeask.png',
     },
   },
 }

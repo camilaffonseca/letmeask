@@ -1,3 +1,3 @@
-import Home from 'views/Home'
+import SignIn from 'views/SignIn'
 
-export { Home }
+export { SignIn }

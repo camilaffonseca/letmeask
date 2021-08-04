@@ -14,6 +14,7 @@ import { PageProps } from 'types/pageProps'
 import { Theme } from 'types/theme'
 
 import defaultTheme from 'theme/defaultTheme'
+import GlobalStyle from 'theme/globalStyle'
 
 import userSettingsMock from 'mocks/businessSettings'
 
@@ -51,6 +52,7 @@ const PageProviderWrapper = ({ children, currentLocale, ...props }: PageProps) =
       businessInfo={businessSettings.businessInfo}
       {...props}
     >
+      <GlobalStyle />
       {children}
     </DynamicPageProvider>
   )

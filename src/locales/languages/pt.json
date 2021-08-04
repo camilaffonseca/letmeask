@@ -1,5 +1,11 @@
 {
-  "home.hello": "Olá! :)",
-  "home.description": "Esta é a versão de produção do Letmeask. Este projeto é baseado em Typescript e Next.js e é de código aberto.",
-  "home.use": "Você pode usá-lo ou contribuir com melhorias e novos recursos!"
+  "sign_in.alt_illustration_image": "Imagem ilustrativa representando perguntas e respostas",
+  "sign_in.title": "Toda pergunta tem uma resposta.",
+  "sign_in.description": "Aprenda e compartilhe conhecimento com outras pessoas",
+  "sign_in.alt_world_icon": "Botão com ícone de mundo que, quando clicado, alterna para o idioma inglês",
+  "sign_in.alt_logo": "Letmeask logo",
+  "sign_in.create_room": "Crie sua sala com o Google",
+  "sign_in.enter_a_room": "ou entre em uma sala",
+  "sign_in.enter_room_code": "Digite o código da sala",
+  "sign_in.enter_a_room_button": "Entrar na sala"
 }
