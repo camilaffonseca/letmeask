@@ -47,7 +47,7 @@ const SignIn = () => {
       </Aside>
       <Container flex={5} flexDirection='column' h='100vh'>
         <Container w={1} justifyContent='flex-end' flex={1}>
-          <Link href='/' locale={currentLocale === 'pt' ? 'en' : 'pt'}>
+          <Link passHref href='/' locale={currentLocale === 'pt' ? 'en' : 'pt'}>
             <Anchor justifyContent='center' alignItems='center' w={70} h={50}>
               <Image
                 width={24}
